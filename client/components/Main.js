@@ -8,9 +8,10 @@ const Main = React.createClass({
                 <h1>
                     <Link to="/">Reduxtagram</Link>
                 </h1>
+                {React.cloneElement(this.propTypes.children, this.props)}
             </div>    
         )
     }
-})
+});
 
 export default Main;
